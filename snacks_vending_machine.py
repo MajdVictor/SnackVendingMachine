@@ -202,14 +202,14 @@ if __name__ == "__main__":
     while float(amount) < float(unit[1]):
         
         try:
-            x = float(input('please insert the money: '))
+            money = float(input('please insert the money: '))
             pass
         except:
             print('enter a numerical value!\n')
             continue
         
         #displaying the accumulated amount of money
-        if money_validation.check_if_money_valid(money_slot, x):
+        if money_validation.check_if_money_valid(money_slot, money):
             print('accumulated amount: ', money_validation.return_amount(), '\n')
 
         amount = money_validation.return_amount()
