@@ -15,7 +15,7 @@ class SnackSlot:
                 self.__snack_items[(x + 1, y + 1)] = [5, random.randint(1, 60)]
 
     def print_snack_dict(self):
-        ''' prints out the dictionary and used for testing purposes '''
+        ''' prints out the dictionary '''
 
         print(self.__snack_items)
     
@@ -90,6 +90,9 @@ class SnackSlot:
 
                 z += 1
             print('\n')
+
+    def return_snack_dict(self):
+        return self.__snack_items
     
 
 class MoneySlot:
